@@ -7,6 +7,8 @@
 
     <h1>My Blog</h1>
 
+    <a href="{% url 'post_create' %}">글 작성</a>
+
     {% for post in posts %}
         <article>
             <h2>

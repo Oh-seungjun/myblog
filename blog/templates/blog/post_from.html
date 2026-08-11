@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>새 글 작성</title>
+</head>
+<body>
+
+    <h1>새 글 작성</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">작성</button>
+    </form>
+
+    <br>
+
+    <a href="{% url 'home' %}">취소</a>
+
+</body>
+</html>
